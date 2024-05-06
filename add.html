@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="add.css">
+    <title>Add To Inventory</title>
+</head>
+<body>
+<section class="container">
+    <nav>
+        <ul class="navigation">
+            <li><a class="active" href="add.html">Add To Inventory</a></li>
+            <li><a href="tracker.html">Expiring Items List</a></li>
+            <li><a href="expiration.html">Expiration Lookup</a></li>
+            <li><a href="#" id="signout">Sign Out</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <form id="addItemForm" class="login-form">
+            <div class="form-group">
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" name="itemName" required>
+            </div>
+            <div class="form-group">
+                <label for="referenceNumber">Reference Number:</label>
+                <input type="text" id="referenceNumber" name="referenceNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="lotNumber">Lot Number:</label>
+                <input type="text" id="lotNumber" name="lotNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="expirationDate">Expiration Date:</label>
+                <input type="date" id="expirationDate" name="expirationDate" required>
+            </div>
+            <div class="form-group">
+                <label for="itemQuantity">Item Quantity:</label>
+                <input type="number" id="itemQuantity" name="itemQuantity" required>
+            </div>
+            <button type="submit" class="button">Add Item</button>
+        </form>
+    </div>
+</section>
+<audio id="audio" src="https://www.pachd.com/a/button/button4.wav"></audio>
+<footer>
+    <p>© 2024 Expiration Tracker Group. All rights reserved.</p>
+</footer>
+<script type="module" src="add.js"></script>
+<script type="module" src="signout.js"></script>
+</body>
+</html>

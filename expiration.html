@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="expiration.css">
+    <title>Expiration Lookup</title>
+</head>
+<body>
+<section class="container">
+<header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="add.html">Add To Inventory</a></li>
+            <li><a href="tracker.html">Expiring Items List</a></li>
+            <li><a href="expiration.html" class="active">Expiration Lookup</a></li>
+            <li><a href="#" id="signout">Sign Out</a></li>
+        </ul>
+    </nav>
+</header>
+<main style="display: grid; place-items: center;">
+    <form>
+        <label for="start_date">Starting Date:&nbsp;</label>
+        <input name="start_date" id="start_date" type="date" autocomplete="on">
+        <br>
+        <label for="end_date">Ending Date:&nbsp;</label>
+        <input name="end_date" id="end_date" type="date" autocomplete="on">
+        <br>
+        <input class="exp_lookup_button" type="button" id="exp_lookup_button" value="Lookup" />
+    </form>
+</main>
+<div id="to_be_replaced" style="text-align: center; display: grid; place-items: center;">
+    <!-- Results will be populated here -->
+</div>
+</section>
+<footer>
+    <p>© 2024 Expiration Tracker Group. All rights reserved.</p>
+</footer>
+<script type="module" src="expiration.js"></script>
+<script type="module" src="signout.js"></script>
+</body>
+</html>
